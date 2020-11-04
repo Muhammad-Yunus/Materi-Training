@@ -1,0 +1,13 @@
+[Unit]
+Description=Jupyter Notebook
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/jupyter-lab --no-browser --ip 0.0.0.0 --port 8888
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/
+
+
+[Install]
+WantedBy=multi-user.target
