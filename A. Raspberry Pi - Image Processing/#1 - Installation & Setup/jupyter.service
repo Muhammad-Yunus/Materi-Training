@@ -3,7 +3,7 @@ Description=Jupyter Notebook
 
 [Service]
 Type=simple
-ExecStart=/home/pi/run_notebook.sh 
+ExecStart=bash /home/pi/run_notebook.sh 
 User=pi
 Group=pi
 WorkingDirectory=/home/pi/
