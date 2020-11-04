@@ -1,1 +1,1 @@
-jupyter lab --no-browser --ip 0.0.0.0 --port 8888
+~/.local/bin/jupyter-lab --no-browser --ip 0.0.0.0 --port 8888
