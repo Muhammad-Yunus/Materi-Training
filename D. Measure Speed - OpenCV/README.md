@@ -5,3 +5,8 @@
     - Hough Transform
     - calculate Speed
     
+    
+- Pertemuan 2 : [view notebook](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/D.%20Measure%20Speed%20-%20OpenCV/Pertemuan_2/Pertemuan%202.ipynb) • [download notebook](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/D.%20Measure%20Speed%20-%20OpenCV/Pertemuan_2/Pertemuan_2.zip)
+    - calculate speed (continue...)
+    - create GUI dekstop
+    
