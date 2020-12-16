@@ -11,3 +11,6 @@
 
 - Pertemuan 4 : OpenCV Facedetection Casecade Classifier (Inference & Training) <br>
 [view notebook pertemuan 4](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_4/Pertemuan%204.ipynb) • [download notebook pertemuan 4](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/C.%20Facerecognition/pertemuan_4/pertemuan_4.zip)
+
+- Pertemuan 5 : OpenCV Facerecognizer (Eigenface, Fisherface, Local Binary Pattern Histograms (LBPH)) <br>
+[view notebook pertemuan 5](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_5/Pertemuan%205.ipynb) • [download notebook pertemuan 5](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/C.%20Facerecognition/pertemuan_5/pertemuan_5.zip)
