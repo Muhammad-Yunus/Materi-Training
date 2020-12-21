@@ -14,3 +14,6 @@
 
 - Pertemuan 5 : OpenCV Facerecognizer (Eigenface, Fisherface, Local Binary Pattern Histograms (LBPH)) <br>
 [view notebook pertemuan 5](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_5/Pertemuan%205.ipynb) • [download notebook pertemuan 5](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/C.%20Facerecognition/pertemuan_5/pertemuan_5.zip)
+
+- Pertemuan 6 : OpenCV, Scikit-Learn & Scikit-Image (LBPH Facial Descriptor with SVM Classifier using Kernel Chi2) <br>
+[view notebook pertemuan 6](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_6/pertemuan%206.ipynb) • [download notebook pertemuan 6](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_6/pertemuan_6.zip)
