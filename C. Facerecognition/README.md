@@ -18,6 +18,8 @@
 - Pertemuan 6 : OpenCV, Scikit-Learn & Scikit-Image (LBPH Facial Descriptor with SVM Classifier using Kernel Chi2) <br>
 [view notebook pertemuan 6](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_6/pertemuan%206.ipynb) • [download notebook pertemuan 6](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_6/pertemuan_6.zip)
 
-- Pertemuan 7 : OpenCV & Keras (Intro to Neural Network using Keras) <br>
-[view notebook pertemuan 7](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_7/2.%20Implementasi%20Neural%20Network.ipynb) • [download notebook pertemuan 7](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/C.%20Facerecognition/pertemuan_7/pertemuan_7.zip)
+- Pertemuan 7 & 8 : OpenCV & Keras 
+  - Intro to Neural Network using Keras
+  - Facerecognition Using Convolution Neural Network(CNN) using Keras <br>
+[view notebook pertemuan 7 & 8 ](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_7/2.%20Implementasi%20Neural%20Network.ipynb) • [download notebook pertemuan 7 & 8](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/C.%20Facerecognition/pertemuan_7/pertemuan_7.zip)
 
