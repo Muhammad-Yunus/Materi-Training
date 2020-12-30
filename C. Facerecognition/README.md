@@ -23,5 +23,5 @@
   - Facerecognition Using Convolution Neural Network(CNN) using Keras <br>
 [view notebook pertemuan 7 & 8 ](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_7/2.%20Implementasi%20Neural%20Network.ipynb) • [download notebook pertemuan 7 & 8](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/C.%20Facerecognition/pertemuan_7/pertemuan_7.zip)
 
-- Pertemuan 9 : OpenCV DNN & Flask (Optimize Model facerecognition For Inference & MJPEG Stream Flask in Webcam) <br>
+- Pertemuan 9 : OpenCV DNN & Flask (Optimize Model facerecognition For Inference & MJPEG Stream Flask in Browser) <br>
 [view notebook pertemuan 9](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_9/pertemuan_9.ipynb) • [download notebook pertemuan 9](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/C.%20Facerecognition/pertemuan_9/pertemuan_9.zip)
