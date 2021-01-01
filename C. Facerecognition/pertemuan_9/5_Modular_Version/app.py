@@ -34,4 +34,4 @@ def video_feed():
 
 
 camera = cv2.VideoCapture(0)
-app.run()
+app.run(host="0.0.0.0")

@@ -6,4 +6,8 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-app.run()
+@app.route('/user')
+def user():
+    return render_template('user.html')
+
+app.run(debug=True)
