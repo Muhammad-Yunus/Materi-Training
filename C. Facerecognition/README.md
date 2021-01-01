@@ -25,3 +25,7 @@
 
 - Pertemuan 9 : OpenCV DNN, Tensorflow & Flask (Optimize Model For Inference & Flask Web App as MJPEG Stream) <br>
 [view notebook pertemuan 9](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_9/pertemuan_9.ipynb) • [download notebook pertemuan 9](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/C.%20Facerecognition/pertemuan_9/pertemuan_9.zip)
+
+
+- Pertemuan 10 : Transfer Learning Deep Learning Model <br>
+[view notebook pertemuan 10](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_10/Pertemuan%2010.ipynb) • [download notebook pertemuan 10](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/C.%20Facerecognition/pertemuan_10/pertemuan_10.zip)
