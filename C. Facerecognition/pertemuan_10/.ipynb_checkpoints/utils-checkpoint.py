@@ -21,11 +21,11 @@ class Preprocessing():
         else:
             print("[%s] (%d samples)\t label : %s \t\t" % (progr, val+1, folder), end="\r")
 
-    def load_dataset(self, dataset_folder = "new_dataset/",  size=(50,50), is_gray=True):
+    def load_dataset(self, dataset_folder = "new_dataset/",  size=(50,50), is_gray=True, max_sample=50):
         names = []
         images = []
         for folder in os.listdir(dataset_folder):
-            files = os.listdir(os.path.join(dataset_folder, folder))[:150]
+            files = os.listdir(os.path.join(dataset_folder, folder))[:max_sample]
             for i, name in enumerate(files): 
                 if name.find(".jpg") > -1 :
                     img = cv2.imread(os.path.join(dataset_folder + folder, name))
