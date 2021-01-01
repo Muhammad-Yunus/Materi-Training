@@ -2,7 +2,6 @@ import keras
 import tensorflow as tf
 from tensorflow.python.framework.convert_to_constants import convert_variables_to_constants_v2
 from tensorflow.python.tools import optimize_for_inference_lib
-from tf.compat.v1.tools.graph_transforms import TransformGraph
 
 class ModelOptimizer():
     def h5_to_savedModel(self, model_name='model-cnn-facerecognition.h5', savedModel_folder="tf_model"):

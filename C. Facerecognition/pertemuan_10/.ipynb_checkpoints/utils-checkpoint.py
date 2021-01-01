@@ -96,7 +96,7 @@ class Preprocessing():
             idx = labels.index(name)
             if idx < 0 :
                 raise Exception("%s is not found in list labels" % name)
-            pad = np.zeros(idx + 1)
+            pad = np.zeros(len(labels))
             pad[idx] = 1
             categorical.append(pad.tolist())
         return categorical
