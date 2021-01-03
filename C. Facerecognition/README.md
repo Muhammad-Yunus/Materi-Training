@@ -29,3 +29,6 @@
 
 - Pertemuan 10 : Transfer Learning Deep Learning Model <br>
 [view notebook pertemuan 10](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_10/Pertemuan%2010.ipynb) • [download notebook pertemuan 10](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/C.%20Facerecognition/pertemuan_10/pertemuan_10.zip)
+
+- Pertemuan 11 : AI Based Attendance Systems (Flask + OpenCV + Keras + Bootstrap + JQuery) <br>
+[view notebook pertemuan 11](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_11/pertemuan_11.ipynb) • [download notebook pertemuan 11](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/C.%20Facerecognition/pertemuan_11/pertemuan_11.zip)
