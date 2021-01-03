@@ -1,0 +1,41 @@
+{% extends "_layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <div class="container mb-2">
+            <h3>Live Camera</h3>
+            {% if is_camera %}
+                <a href="/?camera=off" class="btn btn-danger" role="button">Turn Off Camera</a>
+            {% else %}
+                <a href="/?camera=on" class="btn btn-info" role="button">Turn On Camera</a>
+            {% endif %}
+        </div>
+        <div class="row">
+            <div id="video_wrapper" class="container col-md-6">
+                {% if is_camera %}
+                    <img src="/video_feed" width="480">
+                {% else %}
+                    <img src="/static/img/no_video.png" width="480">
+                {% endif %}
+            </div>
+            <div id="output" class="container col-md-6" style="height: 360px; overflow-y: scroll;"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+    var socket = io();
+    socket.on('connect', function(msg) {
+        socket.emit('server_event', {data: 'this is from browser on connected!'});
+    });
+
+    socket.on('client_event', function(msg) {
+        var content = $("#output").html()
+        $("#output").html(msg + '<br>' + content);
+        socket.emit('server_event', {data: 'this is from browser!'});
+    });
+
+</script>
+{% endblock %}

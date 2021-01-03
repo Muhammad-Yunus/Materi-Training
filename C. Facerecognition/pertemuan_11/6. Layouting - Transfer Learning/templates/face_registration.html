@@ -1,0 +1,83 @@
+{% extends "_layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <div class="container row">
+            <div class="col-sm-5 row">
+                <div class="col-sm-12">
+                    <h3>Take Picture</h3>
+                    <div id="my_camera" class="rounded mb-3" style="width:320px; height:240px;"></div>
+                </div>
+                <div class="col-sm-5">
+                    <input id="class_name" type="text" class="form-control form-control-sm">
+                </div>
+                <div class="col-sm-7 text-white">
+                    <a id="open_camera" class="btn btn-info btn-sm">Turn On</span></a>
+                    <a id="capture_photo" class="btn btn-success"><span class="fa fa-camera"></span></a>
+                    <a id="close_camera" class="btn btn-danger"><span class="fa fa-window-close"></span></a>
+                </div>
+            </div> 
+            <div id="my_result" class="col-sm-7"></div>
+        </div>
+        <hr>
+        <div class="container row">
+            <div class="col-md-12 mb-3">
+                <h3>Transfer Learning</h3>
+                <button id="run" class="btn btn-success btn-sm">Run Transfer Learning</button>
+                <button id="check" class="btn btn-info btn-sm">Check Status</button>
+            </div>
+            <div class="col-md-12">
+                <div id="result" class="bg-secondary p-3 small text-light" style="height: 360px; overflow-y: scroll;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+    $("#open_camera").click(function(event){
+        Webcam.attach( '#my_camera' );
+    });
+    $("#capture_photo").click(function(event){
+        Webcam.snap( function(data_uri) {
+            var content = $('#my_result').html();
+            $('#my_result').html('<img src="'+data_uri+'" style="width:80px; height:60px;"/>' + content);
+
+            var class_name = $('#class_name').val();
+            Webcam.upload(data_uri, "/upload_photo?class_name=" + class_name, function(code, text) {
+                console.log('upload photo', code, text);
+            });
+        } );
+    });
+
+    $("#close_camera").click(function(event){
+        $('#my_result').html('');
+        Webcam.reset();
+    });
+</script>
+
+<script type="text/javascript" charset="utf-8">
+    
+    var socket = io();
+
+    $("#run").click(function(event){
+        $("#result").html('');
+        socket.emit('run', {data: 'run data'});
+    });
+
+    $("#check").click(function(event){
+        socket.emit('check', {data: 'check data'});
+    });
+
+    socket.on('feedback', function(msg) {
+        var feedback_log = $("#result").html();
+        $("#result").html(feedback_log + "<br>" + msg);
+    });
+
+    socket.on('status', function(msg) {
+        alert("background job status " + ((msg === false)? 'idle' : 'running'));
+    });
+
+</script>
+{% endblock %}

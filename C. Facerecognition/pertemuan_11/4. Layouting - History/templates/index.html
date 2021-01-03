@@ -1,0 +1,50 @@
+{% extends "_layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <div class="container mb-2">
+            <h3>Live Camera</h3>
+            {% if is_camera %}
+                <a href="/?camera=off" class="btn btn-danger" role="button">Turn Off Camera</a>
+            {% else %}
+                <a href="/?camera=on" class="btn btn-info" role="button">Turn On Camera</a>
+            {% endif %}
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="video_wrapper" class="container">
+                    {% if is_camera %}
+                        <img src="/video_feed" width="480">
+                    {% else %}
+                        <img src="/static/img/no_video.png" width="480">
+                    {% endif %}
+                </div>
+            </div>
+            <div id = "history" class="col-md-6 row bg-white pt-3" style="height: 360px; overflow-y: scroll;">
+                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+    <script>
+        var socket = io();
+        socket.on('prediction', function(message) {
+
+            var frame = new Uint8Array(message.frame);
+            var src = URL.createObjectURL( new Blob([frame], { type: 'image/png' }));
+
+            var content = $("#history").html()
+
+            $("#history").html('<div class="col-md-3 p-1 small">'+
+                                '<img src="' + src + '" class="rounded" style="width:100px;"></img>'+ "<br>" +
+                                message.label + " : " + 
+                                ((message.status) ? 'masuk' : 'keluar') + "<br>" +
+                                message.time + 
+                                '</div>' + content);
+            
+        });
+    </script>
+{% endblock %}
