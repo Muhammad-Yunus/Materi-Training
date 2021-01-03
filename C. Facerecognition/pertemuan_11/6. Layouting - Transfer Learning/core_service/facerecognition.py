@@ -2,7 +2,7 @@ import os
 import cv2
 import pandas as pd
 import numpy as np
-import mtcnn
+from mtcnn import MTCNN
 import datetime
 
 class Recognizer():
@@ -50,7 +50,7 @@ class Recognizer():
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         faces = []
         if self.use_mtcnn :
-            faces = detector.detect_faces(img)
+            faces = self.face_cascade.detect_faces(frame)
             faces = [ face['box'] for face in faces]
         else :
             faces = self.face_cascade.detectMultiScale(gray, 1.1, 5)

@@ -10,6 +10,7 @@ app.config['SECRET_KEY'] = 'qwerty123'
 
 socketio = SocketIO(app)
 
+
 PATH = '\\'.join(os.path.abspath(__file__).split('\\')[0:-1])
 recognizer = Recognizer(
     socketio=socketio,
