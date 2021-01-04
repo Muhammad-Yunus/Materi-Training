@@ -141,15 +141,20 @@ class TransferLearning(object):
                         callbacks = [self.historyLog]
                         )
 
+        # save model (.h5)
+        PATH = '\\'.join(self.model_name.split('\\')[:-1])
+        new_model_name = "model_cnn_%s.h5" % self.get_datetime_str()
+        self.model.save(os.path.join(PATH, new_model_name))
+        
         self.socketio.emit(self.event, "%s training model completed." % self.get_time())
         self.socketio.sleep(1)
 
         self.socketio.emit(self.event, "%s starting model otimization for inference." % self.get_time())
         self.socketio.sleep(1)
-        # optimize model for inference
-        PATH = '\\'.join(self.model_name.split('\\')[:-1])
 
-        self.modelOptimizer.h5_to_savedModel(model_name = self.model_name, 
+
+        # optimize model for inference
+        self.modelOptimizer.h5_to_savedModel(model_name = os.path.join(PATH, new_model_name), 
                                             savedModel_folder = os.path.join(PATH, "tf_model"))
         
         self.socketio.emit(self.event, "%s saved model `tf_model/` created." % self.get_time())

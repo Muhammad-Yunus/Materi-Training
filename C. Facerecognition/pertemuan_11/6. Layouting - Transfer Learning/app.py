@@ -16,7 +16,7 @@ PATH = '\\'.join(os.path.abspath(__file__).split('\\')[0:-1])
 
 recognizer = Recognizer(
     socketio=socketio,
-    facerecognition_model = os.path.join(PATH, "core_Service\\bin\\frozen_graph.pb"), 
+    facerecognition_model = os.path.join(PATH, "core_Service\\bin\\frozen_graph_04012021_164608.pb"), 
     labels_filename=os.path.join(PATH, "core_Service\\labels.csv"), 
     facedetection_model=os.path.join(PATH, "core_Service\\bin\\haarcascade_frontalface_default.xml"),
     use_mtcnn = False,
@@ -96,7 +96,8 @@ if __name__ == '__main__':
                         model_name=os.path.join(PATH, "core_Service\\bin\\model-cnn-facerecognition.h5"), 
                         dim=len(os.listdir(os.path.join(PATH, "..\dataset"))), 
                         dataset=os.path.join(PATH, "..\dataset"), 
-                        use_augmentation=False)
+                        use_augmentation=False,
+                        epoch=10)
     
     tl.init_model()
 

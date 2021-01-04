@@ -99,6 +99,7 @@ class Preprocessing():
         le = LabelEncoder()
         le.fit(names)
         labels = le.classes_
+        print("labels : ", labels)
         name_vec = le.transform(names)
 
         categorical_name_vec = to_categorical(name_vec)
