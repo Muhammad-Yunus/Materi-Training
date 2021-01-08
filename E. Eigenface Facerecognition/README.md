@@ -5,3 +5,6 @@
 
 - Pertemuan 2 : Python Data Structure (List) & Fundamental Numpy Operation <br>
 [view notebook pertemuan 2](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_2/pertemuan_2.ipynb) • [download notebook pertemuan 2](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_2/pertemuan_2.zip)
+
+- Pertemuan 3 : Basic OpenCV (Read, Display, Capture an Image & Video) <br>
+[view notebook pertemuan 3](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_3/pertemuan_3.ipynb) • [download notebook pertemuan 3](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_3/pertemuan_3.zip)
