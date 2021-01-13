@@ -11,3 +11,6 @@
 
 - Pertemuan 4 : Basic OpenCV (Crop, Resize, Image Color Conversion) <br>
 [view notebook pertemuan 4](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_4/pertemuan_4.ipynb) • [download notebook pertemuan 4](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_4/pertemuan_4.zip)
+
+- Pertemuan 5 : OpenCV Drawing Tool, Facedetection Haar Cascade Classifier & Eigenface using OpenCV, Scikit-Lean and Numpy <br>
+[view notebook pertemuan 5](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_5/pertemuan_5.ipynb) • [download notebook pertemuan 5](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_5/pertemuan_5.zip)
