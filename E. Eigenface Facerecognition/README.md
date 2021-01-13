@@ -8,3 +8,6 @@
 
 - Pertemuan 3 : Basic OpenCV (Read, Display, Capture an Image & Video) <br>
 [view notebook pertemuan 3](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_3/pertemuan_3.ipynb) • [download notebook pertemuan 3](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_3/pertemuan_3.zip)
+
+- Pertemuan 4 : Basic OpenCV (Crop, Resize, Image Color Conversion) <br>
+[view notebook pertemuan 4](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_4/pertemuan_4.ipynb) • [download notebook pertemuan 4](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_4/pertemuan_4.zip)
