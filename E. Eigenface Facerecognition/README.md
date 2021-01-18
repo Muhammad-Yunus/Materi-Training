@@ -14,3 +14,6 @@
 
 - Pertemuan 5 : OpenCV Drawing Tool, Facedetection Haar Cascade Classifier & Eigenface using OpenCV, Scikit-Lean and Numpy <br>
 [view notebook pertemuan 5](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_5/pertemuan_5.ipynb) • [download notebook pertemuan 5](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_5/pertemuan_5.zip)
+
+- Pertemuan 6 : OpenCV & Scikit-Learn Facrecognition using Eigenface with classifier k-NN and SVM <br>
+[view notebook pertemuan 6](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_6/pertemuan%206.ipynb) • [download notebook pertemuan 6](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_6/pertemuan_6.zip)
