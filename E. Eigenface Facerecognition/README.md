@@ -20,3 +20,6 @@
 
 - Pertemuan 7 : OpenCV & Scikit-Learn Facrecognition - Inference Model & Intro to SQL Database <br>
 [view notebook pertemuan 7](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_7/3.%20Inference%20Model.ipynb) • [download notebook pertemuan 7](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_7/pertemuan_7.zip)
+
+- Pertemuan 8 : Basic GUI Desktop Programming PySimpleGUI + SQLlite3 <br>
+[view notebook pertemuan 8](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_8/pertemuan_8.ipynb) • [download notebook pertemuan 8](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_8/pertemuan_8.zip)
