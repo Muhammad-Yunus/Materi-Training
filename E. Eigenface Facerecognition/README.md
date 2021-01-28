@@ -23,3 +23,7 @@
 
 - Pertemuan 8 : Basic GUI Desktop Programming PySimpleGUI + SQLlite3 <br>
 [view notebook pertemuan 8](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_8/pertemuan_8.ipynb) • [download notebook pertemuan 8](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_8/pertemuan_8.zip)
+
+- Pertemuan 9 : GUI Attendance System - Part 1 <br>
+[view notebook pertemuan 9](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_9/Part%201%20-%20Design.ipynb) • [download notebook pertemuan 9](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_9/pertemuan_9.zip)
+
