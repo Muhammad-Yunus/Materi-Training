@@ -27,3 +27,9 @@
 - Pertemuan 9 : GUI Attendance System - Part 1 <br>
 [view notebook pertemuan 9](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_9/Part%201%20-%20Design.ipynb) • [download notebook pertemuan 9](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/E.%20Eigenface%20Facerecognition/pertemuan_9/pertemuan_9.zip)
 
+- Pertemuan 10 : GUI Attendance System - Part 2 <br>
+[view notebook pertemuan 10](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_10/Part%2012%20-%20Styling.ipynb) • [download notebook pertemuan 10](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/pertemuan_10/pertemuan_10.zip)
+
+- Final App :<br>
+[download final app](https://github.com/Muhammad-Yunus/Materi-Training/blob/main/E.%20Eigenface%20Facerecognition/app/app.zip)
+
