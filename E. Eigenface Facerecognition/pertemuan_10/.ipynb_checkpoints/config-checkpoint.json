@@ -1,0 +1,6 @@
+{"classification_model": "SVM_scikit_model.pkl", 
+ "eigenface_model": "pca_model.pkl", 
+ "threshold_accuracy": "0.4", 
+ "using_notification": "0",
+ "delay_capture" : "5"
+}
