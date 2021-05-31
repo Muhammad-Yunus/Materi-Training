@@ -9,3 +9,5 @@ Resource Belajar membuat aplikasi Klasifikasi Tomat
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/03.%20Basic%20Python%20-%20Flow%20Control/Basic%20Python%20-%20Flow%20Control.zip)
 - Pertemuan 4 (Basic Python - Data Structures) :
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/04.%20Basic%20Python%20-%20Data%20Structures/Basic%20Python%20-%20Data%20Structures.zip)
+- Pertemuan 5 (Basic Python - OOP) :
+    - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/04.%20Basic%20Python%20-%20OOP/Basic%20Python%20-%20OOP.zip)
