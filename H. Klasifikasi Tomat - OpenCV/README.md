@@ -13,3 +13,5 @@ Resource Belajar membuat aplikasi Klasifikasi Tomat
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/05.%20Basic%20Python%20-%20OOP/Basic%20Python%20-%20OOP.zip)
 - Pertemuan 6 (Numpy Matrix Fundamental) :
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/06.%20Numpy%20Matrix%20Fundamental/06.%20Numpy%20Matrix%20Fundamental.zip)
+- Pertemuan 7 (OpenCV - Read, Display, Write) :
+    - [download materi (zip)]()
