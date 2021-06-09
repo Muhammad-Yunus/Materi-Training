@@ -17,3 +17,5 @@ Resource Belajar membuat aplikasi Klasifikasi Tomat
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/07.%20OpenCV%20-%20Read%2C%20Display%2C%20Write/07.%20OpenCV%20-%20Read%2C%20Display%2C%20Write.zip)
 - Pertemuan 8 (OpenCV - Crop, Resize, Convert) :
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/08.%20OpenCV%20-%20Crop%2C%20Resize%2C%20Convert/08.%20OpenCV%20-%20Crop%2C%20Resize%2C%20Convert%20%26%20Tresholding.zip)
+- Pertemuan 9 (OpenCV - Tresholding, Masking & Color Segmentation) :
+    - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/09.%20OpenCV%20-%20Tresholding%2C%20Masking%20%26%20Color%20Segmentation/09.%20OpenCV%20-%20Tresholding%2C%20Masking%20%26%20Color%20Segmentation.zip)
