@@ -21,3 +21,5 @@ Resource Belajar membuat aplikasi Klasifikasi Tomat
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/09.%20OpenCV%20-%20Tresholding%2C%20Masking%20%26%20Color%20Segmentation/09.%20OpenCV%20-%20Tresholding%2C%20Masking%20%26%20Color%20Segmentation.zip)
 - Pertemuan 10 (OpenCV - Edge, Contour & Drawing) :
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/10.%20OpenCV%20-%20Edge%2C%20Contour%20%26%20Drawing/10.%20OpenCV%20-%20Edge%2C%20Contour%20%26%20Drawing.zip) 
+- Pertemuan 11 (Feature Extraction - Statistical & Texture) :
+    - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/11.%20Feature%20Extraction%20-%20Statistical%20%26%20Texture/11.%20Feature%20Extraction%20-%20Statistical%20%26%20Texture.zip) 
