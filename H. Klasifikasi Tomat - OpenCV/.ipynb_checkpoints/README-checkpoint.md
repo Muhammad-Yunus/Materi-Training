@@ -25,3 +25,5 @@ Resource Belajar membuat aplikasi Klasifikasi Tomat
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/11.%20Feature%20Extraction%20-%20Statistical%20%26%20Texture/11.%20Feature%20Extraction%20-%20Statistical%20%26%20Texture.zip) 
 - Pertemuan 12 (Machine Learning - Basic Implementation) :
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/12.%20Machine%20Learning%20-%20Basic%20Implementation/12.%20Machine%20Learning%20-%20Basic%20Implementation.zip) 
+- Pertemuan 13 (Machine Learning - Klasifikasi Tomat) :
+    - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/13.%20Machine%20Learning%20-%20Klasifikasi%20Tomat/13.%20Machine%20Learning%20-%20Klasifikasi%20Tomat.zip) 
