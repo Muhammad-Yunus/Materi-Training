@@ -29,3 +29,6 @@ Resource Belajar membuat aplikasi Klasifikasi Tomat
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/13.%20Machine%20Learning%20-%20Klasifikasi%20Tomat/13.%20Machine%20Learning%20-%20Klasifikasi%20Tomat.zip)
 - Pertemuan 14 (GUI Programming - Layout, Widget & Event) :
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/14.%20GUI%20Programming%20-%20Layout%2C%20Widget%20%26%20Event/14.%20GUI%20Programming%20-%20Layout%2C%20Widget%20%26%20Event.zip)
+- Pertemuan 15 (GUI Programming - Layouting Preprocessing & Feature Extraction) :
+    - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/15.%20GUI%20Programming%20-%20Layouting%20Preprocessing%20%26%20Feature%20Extraction/15.%20GUI%20Programming%20-%20Layouting%20Preprocessing%20%26%20Feature%20Extraction.zip)
+    
