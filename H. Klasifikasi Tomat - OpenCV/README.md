@@ -34,8 +34,8 @@ Resource Belajar membuat aplikasi Klasifikasi Tomat
 - Pertemuan 16 (GUI Programming - Layouting Training & Detection) :
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/16.%20GUI%20Programming%20-%20Layouting%20Training%20%26%20Detection/16.%20GUI%20Programming%20-%20Layouting%20Training%20%26%20Detection.zip)
 - Pertemuan 17 (GUI Programming - Build App) :
-    - [download materi (zip)]() : Materi utama
-    - [download Python Installer](https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe) : Python Installer 
-    - [download final App]() : Final App untuk di build
-    - [download Inno Setup Tool](https://jrsoftware.org/download.php/is.exe) : Software untuk Create Installation Wizard
+    - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/17.%20GUI%20Programming%20-%20Build%20App/17.%20GUI%20Programming%20-%20Build%20App.zip) : Materi utama
+    - [download Python Installer (exe)](https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64.exe) : Python Installer 
+    - [download final App (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/app/app.zip) : Final App untuk di build
+    - [download Inno Setup Tool (exe)](https://jrsoftware.org/download.php/is.exe) : Software untuk Create Installation Wizard
     
