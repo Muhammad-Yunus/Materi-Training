@@ -1,9 +1,9 @@
 # Aplikasi Klasifikasi Tomat
 Resource Belajar membuat aplikasi Klasifikasi Tomat.
 ## Final App (Tomato Grading Systems)
-[](resource/tomat_app.gif)<br><br>
+![](resource/tomat_app.gif)<br><br>
 ## Installer Wizard by Inno Setup
-[](resource/tomat_app_install.gif)<br><br>
+![](resource/tomat_app_install.gif)<br><br>
 ## Learning Material
 - Pertemuan 1 (Pengenalan Pemrograan Python & Anaconda) :
     - [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/01.%20Pengenalan%20Python%20%26%20Anaconda/01.%20Pengenalan%20Python%20%26%20Anaconda.zip)
