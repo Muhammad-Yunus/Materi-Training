@@ -305,7 +305,10 @@ class TrainingMLP:
         self.labels_vec = labels_vec
         self.labels_name = labels_name
         
-        self.model_name = "klasifikasi_tomat_mlp_model.xml"
+        self.base_path = os.path.expanduser('~/Tomato Grading Systems')
+        if not os.path.exists(self.base_path):
+            os.mkdir(self.base_path)
+        self.model_name = os.path.join(self.base_path, 'klasifikasi_tomat_mlp_model.xml')
         
     def train(self):
         self.mlp.train(self.X_train, cv2.ml.ROW_SAMPLE, self.y_train)
@@ -333,7 +336,8 @@ class TrainingMLP:
                                     self.y_pred.argmax(axis=1), 
                                     target_names=self.labels_name)
 
-        with open("Report %s.txt" % title, "w") as text_file:
+        report_path = os.path.join(self.base_path, 'Report %s.txt' % title)
+        with open(report_path, "w") as text_file:
             text_file.write(report)
         
         
@@ -364,7 +368,8 @@ class TrainingMLP:
         plt.ylabel('True label')
         plt.xlabel('Predicted label')
         
-        plt.savefig("%s.png" % title, bbox_inches='tight')
+        cm_path = os.path.join(self.base_path, '%s.png' % title)
+        plt.savefig(cm_path, bbox_inches='tight')
         
         plt.close()
     
@@ -377,7 +382,7 @@ class TrainingMLP:
 #
 #############################################################################
 class Prediction:
-    def __init__(self, labels_name, model_name = "klasifikasi_tomat_mlp_model.xml"):
+    def __init__(self, labels_name, model_name = os.path.expanduser('~/Tomato Grading Systems/klasifikasi_tomat_mlp_model.xml')):
         self.mlp = cv2.ml.ANN_MLP_load(model_name)
         self.labels_name = labels_name
         self.output = ""

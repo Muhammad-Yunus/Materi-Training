@@ -8,6 +8,7 @@ import os
 import cv2
 import json
 import shutil
+import logging
 import numpy as np
 import PySimpleGUI as sg 
 
@@ -30,7 +31,7 @@ from CoreService import Prediction
 # # Final Implementation
 
 # In[4]:
-
+logging.basicConfig(filename=os.path.expanduser('~/log.txt'), level=logging.DEBUG)
 
 # Layout Predict Data
 def layout_PredictData_left():
@@ -468,40 +469,50 @@ while True:
             Postpro.transformX()
             Postpro.transformY()
             Postpro.splitData()
+            
+            try :
+                Training = TrainingMLP(Postpro.X_train, 
+                                       Postpro.y_train, 
+                                       Postpro.X_test, 
+                                       Postpro.y_test, 
+                                       Postpro.labels_vec, 
+                                       Postpro.labels_name, 
+                                       max_iteartion=100, 
+                                       min_accuracy=0.9)
 
-            Training = TrainingMLP(Postpro.X_train, 
-                                   Postpro.y_train, 
-                                   Postpro.X_test, 
-                                   Postpro.y_test, 
-                                   Postpro.labels_vec, 
-                                   Postpro.labels_name, 
-                                   max_iteartion=100, 
-                                   min_accuracy=0.9)
+                Training.train()
+                sg.popup("Training sucessfully executed!")
 
-            Training.train()
-            sg.popup("Training sucessfully executed!")
-
-            window['training'].update(visible=False)
-            window['validate'].update(visible=True)
-            window['training_reset'].update(visible=False)
+                window['training'].update(visible=False)
+                window['validate'].update(visible=True)
+                window['training_reset'].update(visible=False)
+            except : 
+                logging.debug('\n')
+                logging.exception("Error on Training")
+                sg.popup("Error when trying to run Training, check log.txt")
         except Exception as e:
             sg.popup(e)
         
     elif event == "validate" :
-        title = 'Confusion matrix - Klasifikasi Tomat'
-        Training.validate(title=title)
-        
-        # update confusion matrix
-        img_byte = ImgToByte(filename = title + ".png")
-        window['confusion_matrix'].update(data=img_byte) 
-        
-        # update classification report
-        with open("Report %s.txt" % title, "r") as f :
-            window['classification_report'].update(f.read())
-        
-        window['training'].update(visible=False)
-        window['validate'].update(visible=False)
-        window['training_reset'].update(visible=True)
+        try :
+            title = 'Confusion matrix - Klasifikasi Tomat'
+            Training.validate(title=title)
+            
+            # update confusion matrix
+            cm_path = os.path.expanduser('~/Tomato Grading Systems/%s.png' % title)
+            img_byte = ImgToByte(filename = cm_path)
+            window['confusion_matrix'].update(data=img_byte) 
+            
+            # update classification report
+            report_path = os.path.expanduser('~/Tomato Grading Systems/Report %s.txt' % title)
+            with open(report_path, "r") as f :
+                window['classification_report'].update(f.read())
+            
+            window['training'].update(visible=False)
+            window['validate'].update(visible=False)
+            window['training_reset'].update(visible=True)
+        except Exception as e:
+            sg.popup(e)        
         
     elif event == 'training_reset':
         window['confusion_matrix'].update(filename="empty.png")
@@ -611,6 +622,7 @@ while True:
         window['feature_texture_table'].update([[]*4]*8)
         window['predict_data'].update(visible=True)
         window['prediction_reset'].update(visible=False)
+        window['prediction_result'].update("N/A")
         
 window.close()
 try :
