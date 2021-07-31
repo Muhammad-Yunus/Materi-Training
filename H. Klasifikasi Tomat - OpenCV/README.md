@@ -43,4 +43,4 @@ Resource Belajar membuat aplikasi Klasifikasi Tomat.
     - [download final App (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/app/app.zip) : Final App untuk di build
     - [download Inno Setup Tool (exe)](https://jrsoftware.org/download.php/is.exe) : Software untuk Create Installation Wizard
 - Update 18 (New Dataset Process) :
-	- [download materi (zip)]()
+	- [download materi (zip)](https://github.com/Muhammad-Yunus/Materi-Training/raw/main/H.%20Klasifikasi%20Tomat%20-%20OpenCV/18.%20New%20Dataset%20Process/18.%20New%20Dataset%20Process.zip)
