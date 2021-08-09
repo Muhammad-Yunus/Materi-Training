@@ -432,14 +432,15 @@ while True:
             feature_glcm = json.dumps(Feature.glcm_feature_list[sample_idx][img_idx], indent=4, sort_keys=True)
             
             feature = "*"*30 + "\n" + feature_stat + "\n\n" + "*"*30 + "\n" + feature_glcm
+            
             window['feature_output'].update(feature)
             
             # statistical feature table
-            stat_table = stat_feature_tabular(Feature.statistical_features[sample_idx][img_idx], 
+            stat_table = stat_feature_tabular([Feature.statistical_features[sample_idx][img_idx]], 
                                               Feature.color_ch)               
             window['stat_table'].update(stat_table)
             # texture feature table
-            texture_table = texture_feature_tabular(Feature.glcm_feature_list[sample_idx][img_idx], 
+            texture_table = texture_feature_tabular([Feature.glcm_feature_list[sample_idx][img_idx]], 
                                                     Feature.color_ch, 
                                                     Feature.texture_feature_labels)    
             window['texture_table'].update(texture_table)
