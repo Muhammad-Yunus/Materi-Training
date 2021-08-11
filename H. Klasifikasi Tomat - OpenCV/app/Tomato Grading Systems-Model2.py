@@ -16,16 +16,16 @@ import PySimpleGUI as sg
 # In[2]:
 
 
-from CoreServiceModel1 import Preprocessing
-from CoreServiceModel1 import FeatureExtraction
+from CoreServiceModel2 import Preprocessing
+from CoreServiceModel2 import FeatureExtraction
 
 
 # In[3]:
 
 
-from CoreServiceModel1 import Postprocessing
-from CoreServiceModel1 import TrainingMLP
-from CoreServiceModel1 import Prediction
+from CoreServiceModel2 import Postprocessing
+from CoreServiceModel2 import TrainingMLP
+from CoreServiceModel2 import Prediction
 
 
 # # Final Implementation
@@ -347,7 +347,6 @@ window = sg.Window("Tomato Grading Systems", layout=Layout(), margins=(10, 10), 
 window.set_min_size((800,450))
 Original_dataset_Path = ""
 label_name = ["Tomat Baik", "Tomat Buruk"]
-
 while True:
     event, values = window.read(timeout=25)
     if event == "Exit" or event == sg.WIN_CLOSED:
@@ -591,10 +590,9 @@ while True:
             XPostpro.transformX()
 
             # Predict Data
-            sample = np.array([XPostpro.X[0]]) # get one sample from X_test data
-
+            print("len of sample :", len(XPostpro.X) , len(XPostpro.X[0]))
             Predict = Prediction(label_name)
-            Predict.predict(sample)
+            Predict.predict(XPostpro.X)
 
             # update preprocessed image widget
             PREPROCESSED_FILENAMES = os.listdir(os.path.join(PREPROCESSED_PATH, "app", "sample_000"))
