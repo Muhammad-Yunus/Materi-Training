@@ -512,15 +512,16 @@ while True:
     elif event == "validate" :
         try :
             title = 'Confusion matrix - Klasifikasi Tomat'
+            model_name = "Model1"
             Training.validate(title=title)
             
             # update confusion matrix
-            cm_path = os.path.expanduser('~/Tomato Grading Systems/%s.png' % title)
+            cm_path = os.path.expanduser('~/Tomato Grading Systems %s/%s.png' % (model_name, title))
             img_byte = ImgToByte(filename = cm_path)
             window['confusion_matrix'].update(data=img_byte) 
             
             # update classification report
-            report_path = os.path.expanduser('~/Tomato Grading Systems/Report %s.txt' % title)
+            report_path = os.path.expanduser('~/Tomato Grading Systems %s/Report %s.txt' % (model_name, title))
             with open(report_path, "r") as f :
                 window['classification_report'].update(f.read())
             
@@ -592,7 +593,7 @@ while True:
 
             # Predict Data
             sample = np.array([XPostpro.X[0]]) # get one sample from X_test data
-
+            
             Predict = Prediction(label_name)
             Predict.predict(sample)
 

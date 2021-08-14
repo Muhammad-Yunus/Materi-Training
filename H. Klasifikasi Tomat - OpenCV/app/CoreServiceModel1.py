@@ -115,10 +115,16 @@ class Preprocessing :
             sample_roi = []
             for j in range(len(self.image_range[i])):
                 img = self.image_range[i][j]
-                cnt = np.concatenate(self.filtered_contours_list[i][j], axis=0) # concate all remaining contour each image
-                x, y, w, h = cv2.boundingRect(cnt)
-                roi = img[y:y+h, x:x+w]
-                sample_roi.append(roi)
+                try : 
+                    cnt = np.concatenate(self.filtered_contours_list[i][j], axis=0) # concate all remaining contour each image
+                    x, y, w, h = cv2.boundingRect(cnt)
+                    roi = img[y:y+h, x:x+w]
+                    sample_roi.append(roi)
+                except :
+                    h, w, __ = img.shape
+                    d = min(h,w)
+                    roi = img[0:d, 0:d]
+                    sample_roi.append(roi)
             self.image_croped.append(sample_roi)
         self.image_range = []        
         
@@ -327,7 +333,7 @@ class Postprocessing :
 #
 #############################################################################
 class TrainingMLP:
-    def __init__(self, X_train, y_train, X_test, y_test, labels_vec, labels_name, max_iteartion=100, min_accuracy=0.9, input_dim=2):
+    def __init__(self, X_train, y_train, X_test, y_test, labels_vec, labels_name, max_iteartion=100, min_accuracy=0.9, input_dim=2, model_name="Model1"):
         self.mlp = cv2.ml.ANN_MLP_create()
         
         input_dim = X_train.shape[1] if X_train is not None else input_dim
@@ -349,17 +355,17 @@ class TrainingMLP:
         self.labels_vec = labels_vec
         self.labels_name = labels_name
         
-        self.base_path = os.path.expanduser('~/Tomato Grading Systems')
+        self.base_path = os.path.expanduser('~/Tomato Grading Systems %s' % model_name)
         if not os.path.exists(self.base_path):
             os.mkdir(self.base_path)
-        self.model_name = os.path.join(self.base_path, 'klasifikasi_tomat_mlp_model.xml')
+        self.model_path = os.path.join(self.base_path, 'klasifikasi_tomat_mlp_model.xml')
         
     def train(self):
         self.mlp.train(self.X_train, cv2.ml.ROW_SAMPLE, self.y_train)
-        self.mlp.save(self.model_name)
+        self.mlp.save(self.model_path)
         
     def validate(self, title='Confusion matrix - Klasifikasi Tomat'):
-        self.mlp.load(self.model_name)
+        self.mlp.load(self.model_path)
         self.y_pred = self.mlp.predict(self.X_test)[1]
         
         # Compute confusion matrix
@@ -426,8 +432,13 @@ class TrainingMLP:
 #
 #############################################################################
 class Prediction:
-    def __init__(self, labels_name, model_name = os.path.expanduser('~/Tomato Grading Systems/klasifikasi_tomat_mlp_model.xml')):
-        self.mlp = cv2.ml.ANN_MLP_load(model_name)
+    def __init__(self, labels_name, model_name = "Model1"):
+        model_path = os.path.expanduser('~/Tomato Grading Systems %s/klasifikasi_tomat_mlp_model.xml' % model_name)
+        self.mlp = ""
+        try : 
+            self.mlp = cv2.ml.ANN_MLP_load(model_path)
+        except : 
+            raise Exception("Model path %s not found!, please run training model again!" % model_path)
         self.labels_name = labels_name
         self.output = ""
         

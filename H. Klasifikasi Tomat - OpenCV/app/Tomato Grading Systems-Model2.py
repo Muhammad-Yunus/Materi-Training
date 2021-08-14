@@ -511,18 +511,18 @@ while True:
     elif event == "validate" :
         try :
             title = 'Confusion matrix - Klasifikasi Tomat'
+            model_name = "Model2"
             Training.validate(title=title)
             
             # update confusion matrix
-            cm_path = os.path.expanduser('~/Tomato Grading Systems/%s.png' % title)
+            cm_path = os.path.expanduser('~/Tomato Grading Systems %s/%s.png' % (model_name, title))
             img_byte = ImgToByte(filename = cm_path)
             window['confusion_matrix'].update(data=img_byte) 
             
             # update classification report
-            report_path = os.path.expanduser('~/Tomato Grading Systems/Report %s.txt' % title)
+            report_path = os.path.expanduser('~/Tomato Grading Systems %s/Report %s.txt' % (model_name, title))
             with open(report_path, "r") as f :
                 window['classification_report'].update(f.read())
-            
             window['training'].update(visible=False)
             window['validate'].update(visible=False)
             window['training_reset'].update(visible=True)
@@ -576,6 +576,7 @@ while True:
             PREPROCESSED_PATH = os.path.join(os.path.dirname(Path_Sample), "preprocessed_sample/").replace("\\","/")
             XPrepro.SaveAllImage(RESIZED_FOLDER = PREPROCESSED_PATH) 
 
+            
             # Feature Extraction
             XFeature = FeatureExtraction(PREPROCESSED_DATASET_FOLDER = PREPROCESSED_PATH)
             XFeature.ImageRead()
